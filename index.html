@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odisha Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Odisha Explorer</div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">History</a>
+        <a href="#">Categories</a>
+        <a href="#">About</a>
+      </div>
+    </header>
+
+    <section class="banner">
+      <p class="tagline">
+        "ଜୟ ଉତ୍କଳ ଜନନୀ"<br /><span>(I adore thee, O Mother Utkala!)</span>
+      </p>
+      <h1 class="odia-title">ଓଡ଼ିଶାକୁ ସ୍ବାଗତ</h1>
+      <p class="subtitle">India's Best Kept Secret</p>
+      <div class="hero-image">
+        <img src="/Project1/img/Odisha.jpg" alt="Odisha hero banner" />
+      </div>
+    </section>
+
+    <section class="history-section">
+      <div class="history-buttons">
+        <h2>History of Odisha</h2>
+        <button onclick="showContent('origin')">Origin</button>
+        <button onclick="showContent('history')">History</button>
+        <button onclick="showContent('present')">Present Day</button>
+      </div>
+      <div class="history-content" id="historyContent">
+        <div id="historyText" class="history-text">
+          <p>Select a topic to explore Odisha's rich legacy.</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
