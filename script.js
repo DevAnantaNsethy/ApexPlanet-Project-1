@@ -34,7 +34,7 @@ function showContent(type) {
 const places = [
   {
     name: "Bhubaneswar",
-    image: "img/Bhu.jpg",
+    image: "Bhu.jpg",
     link: "https://en.wikipedia.org/wiki/Bhubaneswar",
   },
   {
