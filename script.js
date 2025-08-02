@@ -30,3 +30,58 @@ function showContent(type) {
 
   contentBox.innerHTML = text;
 }
+
+const places = [
+  {
+    name: "Bhubaneswar",
+    image: "img/bhu.jpg",
+    link: "https://en.wikipedia.org/wiki/Bhubaneswar",
+  },
+  {
+    name: "Konark",
+    image: "img/konark.jpg",
+    link: "https://en.wikipedia.org/wiki/Konark",
+  },
+  {
+    name: "Puri",
+    image: "img/puri.jpg",
+    link: "https://en.wikipedia.org/wiki/Puri",
+  },
+  {
+    name: "Chilika Lake",
+    image: "img/chilika.jpg",
+    link: "https://en.wikipedia.org/wiki/Chilika_Lake",
+  },
+  {
+    name: "Simlipal",
+    image: "img/simlipal.jpg",
+    link: "https://en.wikipedia.org/wiki/Simlipal_National_Park",
+  },
+];
+
+let currentPlace = 0;
+
+function updateCarousel() {
+  const slide = document.getElementById("carouselSlide");
+  const placeName = document.getElementById("placeName");
+  const discoverBtn = document.getElementById("discoverBtn");
+
+  slide.style.backgroundImage = `url('${places[currentPlace].image}')`;
+  placeName.textContent = places[currentPlace].name;
+  discoverBtn.onclick = () => {
+    window.open(places[currentPlace].link, "_blank");
+  };
+}
+
+function nextPlace() {
+  currentPlace = (currentPlace + 1) % places.length;
+  updateCarousel();
+}
+
+function prevPlace() {
+  currentPlace = (currentPlace - 1 + places.length) % places.length;
+  updateCarousel();
+}
+
+// Initialize carousel on load
+document.addEventListener("DOMContentLoaded", updateCarousel);

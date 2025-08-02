@@ -1,3 +1,17 @@
+<!--
+  Odisha Explorer - A Cultural Showcase Web Project
+  -------------------------------------------------
+  Created By     : Ananta Narayan Sethy
+  Role           : Developer & Designer
+  Created On     : August 2025
+  Project Theme  : Celebrating the history, heritage & destinations of Odisha
+  Technologies   : HTML, CSS, JavaScript
+
+  GitHub         : https://github.com/DevAnantaNsethy/ApexPlanet-Project-1
+  Contact        : anantanarayansethy350@gmail.com
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,9 +26,9 @@
       <div class="logo">Odisha Explorer</div>
       <div class="nav-links">
         <a href="#">Home</a>
-        <a href="#">History</a>
-        <a href="#">Categories</a>
-        <a href="#">About</a>
+        <a href="#history">History</a>
+        <a href="#category">Categories</a>
+        <a href="#about">About</a>
       </div>
     </header>
 
@@ -25,7 +39,7 @@
       <h1 class="odia-title">ଓଡ଼ିଶାକୁ ସ୍ବାଗତ</h1>
       <p class="subtitle">India's Best Kept Secret</p>
       <div class="hero-image">
-        <img src="Odisha.jpg" alt="Odisha hero banner" />
+        <img src="banner.png" alt="Odisha hero banner" />
       </div>
     </section>
 
@@ -33,7 +47,7 @@
       Discover the Glorious Past of Odisha
     </h2>
 
-    <section class="history-section">
+    <section class="history-section" id="history">
       <div class="history-buttons">
         <h2>History of Odisha</h2>
         <button onclick="showContent('origin')">Origin</button>
@@ -44,6 +58,77 @@
         <div id="historyText" class="history-text">
           <p>Select a topic to explore Odisha's rich legacy.</p>
         </div>
+      </div>
+    </section>
+
+    <hr class="section-separator" />
+
+    <section class="category-carousel" id="category">
+      <div class="carousel-container">
+        <button class="carousel-btn left" onclick="prevPlace()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="black"
+            viewBox="0 0 24 24"
+          >
+            <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+          </svg>
+        </button>
+        <div class="carousel-slide" id="carouselSlide">
+          <h2 id="placeName">Bhubaneswar</h2>
+
+          <button class="discover-btn" id="discoverBtn">Discover more</button>
+        </div>
+        <button class="carousel-btn right" onclick="nextPlace()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="black"
+            viewBox="0 0 24 24"
+          >
+            <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <hr class="section-separator" />
+
+    <section id="about" class="about-section">
+      <div class="about-content">
+        <h2>About Odisha Explorer</h2>
+        <p>
+          <strong>Odisha Explorer</strong> is more than just a digital showcase
+          — it's a heartfelt tribute to the land of temples, rivers, forests,
+          and soul-stirring traditions. Inspired by the spirit of exploration
+          and storytelling, this platform bridges the ancient and the modern,
+          the mystical and the real.
+        </p>
+
+        <p>
+          Whether you're here to witness the architectural marvels of
+          <em>Konark</em>, experience the serenity of <em>Chilika</em>, or dive
+          into the legends of <em>Jagannath</em> — you've come to the right
+          place.
+        </p>
+
+        <blockquote>
+          “ଏ ମୋ ଦେଶ ଓଡ଼ିଶା — ଏଠି ରହିଛି ଆତ୍ମା ଏବଂ ଅମର ଐତିହ୍ୟ”
+          <br />— Somewhere in every Odia’s heart
+        </blockquote>
+
+        <p>
+          Built with 💛 using HTML, CSS, and JavaScript — this is a proud
+          student project embracing modern UI while celebrating Odisha's
+          timeless charm.
+        </p>
+
+        <p class="author-sign">
+          Made with ❤️ by <strong>Ananta Narayan Sethy</strong> | 2025
+        </p>
       </div>
     </section>
   </body>
